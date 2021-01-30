@@ -1,0 +1,430 @@
+/*Global*/
+body{
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  text-align: center;
+  background: #ff0000c7;
+}
+.container-fluid{
+  overflow: hidden;
+  padding: 0%;
+  margin: 0% auto;
+}
+
+button{
+  padding: 5%;
+  margin: 5%;
+}
+img{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+ul{
+  padding: 0 20px 2.8px 20px;
+}
+.highlight{
+  color: yellow;
+  font-weight: bold;
+}
+
+/*index*/
+#main-header{
+  border-bottom: snow 3px solid;
+}
+#main-header img{
+  width: 50px;
+}
+#main-header a{
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+#main-header #branding a{
+  margin: 0;
+}
+#main-header a:hover{
+  color:yellow;
+  font-weight: bold;
+}
+#welcomeScreen{
+  padding: 5%;
+  background: url('/imagenes/welcomeBG.jfif') center no-repeat;
+  background-size: cover;
+  color: snow;
+}
+#welcomeScreen h2{
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+#welcomeScreen img{
+  width: 200px;
+  border-radius: 10%;
+}
+#welcomeScreen article{
+  background:rgba(255, 0, 0, 0.39);
+  border-radius: 5%;
+}
+
+#features {
+  background: snow url('/imagenes/cardBG.png') center;
+  background-size: cover;
+}
+
+#features .card{
+  background: url('/imagenes/cardBG.png') center;
+  background-size: contain;
+  color:  snow;
+  padding: 10px;
+}
+
+#features img{
+  display: block;
+  width: 30%;
+}
+.carrusel{
+  padding: 5%;
+  text-align: center;
+  color: snow;
+}
+#carruselBienvenida1{
+  background: #e60012;
+}
+
+#carruselBienvenida1 button{
+  margin: 5%;
+}
+
+#carruselBienvenida2{
+  background: #00c3e3;
+}
+
+#carruselBienvenida2 button{
+  margin: 5%;
+}
+
+#commentsList tbody{
+  text-align: left;
+  border-radius: 10%;
+  color: snow;
+}
+
+h3{
+  border: 5px solid snow;
+  border-bottom: none;
+  margin-bottom: -5px;
+}
+p{
+  border: 5px solid snow;
+  border-top: none;
+  color: black;
+}
+
+#contact .card{
+  background: #ff000000;
+}
+#contact h2{
+  margin: 2.5%;
+}
+
+#contact .card{
+  color: white;
+  font-size: 1.5em;
+}
+
+footer{
+  text-align: left;
+  padding: 20px;
+  margin-top: 20px;
+}
+footer #numero a:hover{
+  color:snow;
+  font-weight: bold;
+}
+/*Listas de juegos*/
+.listaDeJuegos .card{
+  background: transparent;
+}
+
+#listaDeJuegosSwitch{
+  background: url('/imagenes/nintendoBg.jpg') fixed;
+  background-repeat: no-repeat;
+}
+  
+#listaDeJuegosPlay4{
+  background: url('/imagenes/playBg.jpg') fixed;
+  background-repeat: no-repeat;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 375px) {
+  /*index*/
+  .navbar-brand{
+    font-size: 1em;
+  }
+  .nav-link{
+    font-size: 1em;
+  }
+
+  #welcomeScreen img{
+    margin: 20%;
+    width: 200px;
+    border-radius: 10%;
+  }
+  #welcomeScreen h2{
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 1.6em;
+    text-align: center;
+  }
+  #welcomeScreen btn{
+    text-align: center;
+  }
+  #features {
+    text-align: center;
+    border: none;
+    background: snow;
+  }
+
+  #features img{
+    margin-left: 125px;
+    width: 100px;
+  }
+  #features .card{
+    margin-top: 20px;
+  }
+
+
+  #contact .card{
+    border: none;
+    border-radius: 0;
+  }
+
+  footer{
+    font-size: 0.8em;
+  }
+
+  /*Lista de juegos de nintendo switch*/
+  .card-img-top{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 411px) {
+  /*index*/
+  .container {
+    max-width: 800px;
+  }
+  .navbar-brand{
+    font-size: 1em;
+  }
+  .nav-link{
+    font-size: 0.8em;
+  }
+  #main-header img{
+    width: 50px;
+  }
+  #welcomeScreen{
+    text-align: center;
+    padding: 5%;
+  }
+  #welcomeScreen img{
+    margin: 20%;
+    width: 200px;
+    border-radius: 10%;
+  }
+  #welcomeScreen h2{
+    font-weight: 600;
+    font-size: 1.6em;
+    text-align: center;
+  }
+  #welcomeScreen .btn{
+    text-align: center;
+    margin: 10px;
+  }
+
+  #features {
+    text-align: center;
+    border: none;
+    margin: 0;
+
+
+  }
+.card-deck{
+    flex-direction: column;
+  }
+  
+  .card-img-top {
+    margin: 10%;
+    width: 250px;
+  }
+
+  #carruselBienvenida1{
+    padding: 5%;
+  }
+  #carruselBienvenida1 button{
+    margin: 5%;
+  }
+
+  #carruselBienvenida2{
+    padding: 5%;
+  }
+  #carruselBienvenida2 button{
+    margin: 5%;
+  }
+
+  #contact .card{
+    border: none;
+    border-radius: 0;
+  }
+
+  footer{
+    font-size: 0.9em;
+  }
+  /*Lista de juegos de nintendo switch*/
+  .card-img-top{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .oculto {
+    display: none;
+}
+.carousel-indicators > li {
+  height: 20px;
+  width: 20px;
+  transform: rotate(45deg);
+  margin: 1%;
+}
+  .card-deck{
+    flex-flow: row wrap;
+    margin: 0;
+  }
+
+  .nav-link{
+    font-size: 1.2em;
+  }
+  #main-header img{
+    width: 75px;
+  }
+  #welcomeScreen img{
+    width: 300px;
+  }
+  #welcomeScreen .btn{
+    margin: 20px;
+  }
+  #features .card{
+    margin: 10px;
+  }
+  .card-img-top {
+    width: 300px;
+  }
+  #contact .card-body{
+    border-top: snow 3px solid;
+  }
+  #contact h2{
+    font-size: 2em;
+    font-weight: 700;
+  }
+  #contact #numero{
+    margin: 2.5%;
+    font-size: 1.8em;
+  }
+
+  #contact #numero a{
+    font-size: 1em;
+  }
+  footer{
+    padding-top: 100px;
+    font-size: 1em;
+  }
+
+  #features .card{
+    background-image: none;
+    background-color: transparent;
+    color:  snow;
+    border: none;
+  }
+  /*Lista de juegos de nintendo switch*/
+  .card-img-top{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1024px) {
+
+  .nav-link{
+    font-size: 1.4em;
+  }
+  #main-header img{
+    width: 100px;
+  }
+  #welcomeScreen img{
+    width: 325px;
+  }
+  #welcomeScreen .btn{
+    margin: 20px;
+  }
+  #features .card{
+    margin: 10px;
+  }
+  .card-img-top {
+    width: 325px;
+  }
+  footer{
+    font-size: 1.2em;
+  }
+  /*Lista de juegos de nintendo switch*/
+  .card-img-top{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1280px) {
+  .nav-link{
+    font-size: 1.6em;
+  }
+  #main-header img{
+    width: 125px;
+  }
+  #welcomeScreen img{
+    width: 350px;
+  }
+  #welcomeScreen .btn{
+    margin: 20px;
+  }
+  #features .card{
+    margin: 10px;
+  }
+  .card-img-top {
+    width: 350px;
+  }
+  footer{
+    font-size: 1.4em;
+  }
+  /*Lista de juegos de nintendo switch*/
+  .card-img-top{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1366px) {
+  
+}
+/*1366 - 1280 - 1024 - 768 - 411 - 375*/
